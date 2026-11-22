@@ -7,9 +7,6 @@
 [submodule "2-secure-chat"]
 	path = 2-secure-chat
 	url = https://github.com/vballu/clever-cloud-demo-secure-chat.git
-[submodule "3-scaling"]
-	path = 3-scaling
-	url = https://github.com/CleverCloud/demo-scaling-test.git
 [submodule "4-bonus-ocr"]
-	path = 4-bonus-ocr
+	path = 3-bonus-ocr
 	url = https://github.com/CleverCloud/demo-python-uv-mini-ocr.git

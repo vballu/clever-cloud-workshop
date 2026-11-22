@@ -1,6 +1,6 @@
 # Clever Cloud workshop
 
-A hands-on path to deploy applications on Clever Cloud, from a first "hello world" to managed authentication, infrastructure as code and auto-scaling. Each step is a small, self-contained application in its own repository, included here as a Git submodule.
+A hands-on path to deploy applications on Clever Cloud, from a first "hello world" to managed authentication and infrastructure as code. Each step is a small, self-contained application in its own repository, included here as a Git submodule.
 
 ```bash
 git clone --recurse-submodules https://github.com/vballu/clever-cloud-workshop.git
@@ -13,8 +13,7 @@ git clone --recurse-submodules https://github.com/vballu/clever-cloud-workshop.g
 | 0 | [`0-hello-world`](https://github.com/CleverCloud/demo-python-hello-world-uv) | Deploy a Python (Flask, uv) application with `git push` and Clever Tools |
 | 1 | [`1-minichat-keycloak`](https://github.com/CleverCloud/demo-python-uv-minichat-keycloak) | Add a managed PostgreSQL database, then protect the chat with a Keycloak add-on |
 | 2 | [`2-secure-chat`](https://github.com/vballu/clever-cloud-demo-secure-chat) | A hardened chat behind Keycloak, deployed with Clever Tools or with Terraform/OpenTofu (`terraform/`) |
-| 3 | [`3-scaling`](https://github.com/CleverCloud/demo-scaling-test) | Trigger auto-scaling with a CPU-bound endpoint and watch new instances start |
-| 4 | [`4-bonus-ocr`](https://github.com/CleverCloud/demo-python-uv-mini-ocr) | A small OCR micro-service (Tesseract) with Basic Auth |
+| 3 | [`3-bonus-ocr`](https://github.com/CleverCloud/demo-python-uv-mini-ocr) | A small OCR micro-service (Tesseract) with Basic Auth |
 
 Going further: [data lake tutorials on Clever Cloud](https://github.com/CleverCloud/data-lake-tutorials) (DuckDB, Trino, Spark, Iceberg, DuckLake and Delta Lake on Cellar).
 
@@ -22,9 +21,6 @@ Going further: [data lake tutorials on Clever Cloud](https://github.com/CleverCl
 
 - A Clever Cloud account and [Clever Tools](https://www.clever.cloud/developers/doc/cli/) (`clever login`).
 - [uv](https://docs.astral.sh/uv/) for the Python steps, and Terraform or OpenTofu for the infrastructure-as-code option of step 2.
-
-> [!WARNING]
-> Step 3 is about auto-scaling, not load testing. **Never run a load test against a `*.cleverapps.io` domain or a domain served by the shared load balancers**: their limits are shared with other customers. A few `curl` calls are enough to see scaling happen.
 
 ## Updating the steps
 
